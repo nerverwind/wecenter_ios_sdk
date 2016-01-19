@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="703-4V-yAM">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Root View Controller-->
+        <scene sceneID="clB-vc-fyl">
+            <objects>
+                <viewController id="703-4V-yAM" customClass="RootViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="I7W-xW-C47"/>
+                        <viewControllerLayoutGuide type="bottom" id="IfR-02-kHw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="502-Ir-ELC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q3h-pU-vEd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-101" y="-243"/>
+        </scene>
+        <!--Data View Controller-->
+        <scene sceneID="snT-py-3hH">
+            <objects>
+                <viewController storyboardIdentifier="DataViewController" id="S4R-Ja-viH" customClass="DataViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fXf-Jd-eTc"/>
+                        <viewControllerLayoutGuide type="bottom" id="EPS-s9-h4K"/>
+                    </layoutGuides>
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="ZwX-cT-FIQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="cF2-Le-7mQ">
+                                <rect key="frame" x="20" y="20" width="560" height="17"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s1b-V9-EN7">
+                                <rect key="frame" x="20" y="45" width="560" height="535"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="svJ-zb-Qkn">
+                                        <rect key="frame" x="17" y="8" width="46" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Login"/>
+                                        <connections>
+                                            <action selector="myButtonClick:" destination="S4R-Ja-viH" eventType="touchUpInside" id="NiK-Dl-FQO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ori-3i-I1w">
+                                        <rect key="frame" x="17" y="33" width="59" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Logout"/>
+                                        <connections>
+                                            <action selector="myLogout:" destination="S4R-Ja-viH" eventType="touchUpInside" id="w5T-YU-e2e"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k55-jT-EjP">
+                                        <rect key="frame" x="101" y="8" width="94" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="GetUserInfo"/>
+                                        <connections>
+                                            <action selector="myGetUserInfo:" destination="S4R-Ja-viH" eventType="touchUpInside" id="gNg-BI-8T8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hR-wA-Jg6">
+                                        <rect key="frame" x="108" y="33" width="61" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Register"/>
+                                        <connections>
+                                            <action selector="myReg:" destination="S4R-Ja-viH" eventType="touchUpInside" id="UDB-iv-gaE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxE-Pl-g76">
+                                        <rect key="frame" x="17" y="59" width="98" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="UploadAvatar"/>
+                                        <connections>
+                                            <action selector="myUploadAvatar:" destination="S4R-Ja-viH" eventType="touchUpInside" id="5qJ-Ic-H19"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRc-cl-O92">
+                                        <rect key="frame" x="183" y="8" width="96" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="GetUID"/>
+                                        <connections>
+                                            <action selector="myGetUID:" destination="S4R-Ja-viH" eventType="touchUpInside" id="12i-bt-vHD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kkv-FJ-3pr">
+                                        <rect key="frame" x="200" y="33" width="120" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="ModifyPassword"/>
+                                        <connections>
+                                            <action selector="myModPwd:" destination="S4R-Ja-viH" eventType="touchUpInside" id="Xs6-IS-u3J"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8v-9r-ZUk">
+                                        <rect key="frame" x="13" y="83" width="120" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="GetFollowUsers"/>
+                                        <connections>
+                                            <action selector="myGetFollows:" destination="S4R-Ja-viH" eventType="touchUpInside" id="sNq-0c-25k"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bve-EF-AKw">
+                                        <rect key="frame" x="188" y="59" width="107" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="FollowUser"/>
+                                        <connections>
+                                            <action selector="myFollowUser:" destination="S4R-Ja-viH" eventType="touchUpInside" id="bik-JY-Vq5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nKk-aJ-R68">
+                                        <rect key="frame" x="8" y="109" width="114" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="GetFanUsers"/>
+                                        <connections>
+                                            <action selector="myGetFans:" destination="S4R-Ja-viH" eventType="touchUpInside" id="qr8-8j-YRX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vwE-jx-Ikw">
+                                        <rect key="frame" x="12" y="132" width="130" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="GetFollowTopics"/>
+                                        <connections>
+                                            <action selector="myGetFollowTopics:" destination="S4R-Ja-viH" eventType="touchUpInside" id="Dze-fO-p5b"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ix8-1z-nu9">
+                                        <rect key="frame" x="8" y="154" width="136" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="GetUserArticles"/>
+                                        <connections>
+                                            <action selector="myGetUserArticles:" destination="S4R-Ja-viH" eventType="touchUpInside" id="1n2-ya-4Y4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N1i-WJ-bUV">
+                                        <rect key="frame" x="20" y="179" width="129" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="GetUserQuestions"/>
+                                        <connections>
+                                            <action selector="myGetUserQuestions:" destination="S4R-Ja-viH" eventType="touchUpInside" id="jwy-zC-cdn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tK6-l8-acw">
+                                        <rect key="frame" x="20" y="205" width="122" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="GetUserAnswers"/>
+                                        <connections>
+                                            <action selector="myGetUserAnswers:" destination="S4R-Ja-viH" eventType="touchUpInside" id="0Fn-Dt-Vdq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XQR-V8-oKU">
+                                        <rect key="frame" x="15" y="231" width="122" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="ModifyUserInfo"/>
+                                        <connections>
+                                            <action selector="myModUserInfo:" destination="S4R-Ja-viH" eventType="touchUpInside" id="dLP-cC-xdF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="foU-1m-lqF">
+                                        <rect key="frame" x="8" y="253" width="85" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Explore"/>
+                                        <connections>
+                                            <action selector="myExplore:" destination="S4R-Ja-viH" eventType="touchUpInside" id="aIq-Wm-41o"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpa-f6-1M6">
+                                        <rect key="frame" x="23" y="280" width="46" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Home"/>
+                                        <connections>
+                                            <action selector="myHome:" destination="S4R-Ja-viH" eventType="touchUpInside" id="CpS-WJ-jif"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJG-Lr-g0L">
+                                        <rect key="frame" x="7" y="303" width="86" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="Search"/>
+                                        <connections>
+                                            <action selector="mySearch:" destination="S4R-Ja-viH" eventType="touchUpInside" id="P1Q-qR-wwZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F2e-55-53n">
+                                        <rect key="frame" x="15" y="327" width="146" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="AttachUploadImage"/>
+                                        <connections>
+                                            <action selector="myAttachUpload:" destination="S4R-Ja-viH" eventType="touchUpInside" id="WAV-uL-Dl9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wKx-4u-EUn">
+                                        <rect key="frame" x="-12" y="350" width="156" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="PublishArticle"/>
+                                        <connections>
+                                            <action selector="myPublishArticle:" destination="S4R-Ja-viH" eventType="touchUpInside" id="4Cg-5R-gKS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KEM-ln-W78">
+                                        <rect key="frame" x="4" y="374" width="209" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="PublishArticleWidthImage"/>
+                                        <connections>
+                                            <action selector="myPubArtWithImg:" destination="S4R-Ja-viH" eventType="touchUpInside" id="fIN-3w-wMk"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hPD-XJ-zQF">
+                                        <rect key="frame" x="14" y="401" width="125" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="PublishQuestion"/>
+                                        <connections>
+                                            <action selector="myPubQuestion:" destination="S4R-Ja-viH" eventType="touchUpInside" id="SN7-q4-ChZ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqd-cF-Y9g">
+                                        <rect key="frame" x="13" y="426" width="198" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="PublishQuestionWithImage"/>
+                                        <connections>
+                                            <action selector="myPubQuestionWithImage:" destination="S4R-Ja-viH" eventType="touchUpInside" id="OTp-O7-fTR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avo-F9-Dvh">
+                                        <rect key="frame" x="1" y="448" width="114" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="FocusTopic"/>
+                                        <connections>
+                                            <action selector="myFocusTopic:" destination="S4R-Ja-viH" eventType="touchUpInside" id="2aS-oy-lIQ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KLV-T9-b6J">
+                                        <rect key="frame" x="12" y="470" width="78" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="TopicInfo"/>
+                                        <connections>
+                                            <action selector="myTopicInfo:" destination="S4R-Ja-viH" eventType="touchUpInside" id="txF-bw-TeO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A96-Xr-Vaz">
+                                        <rect key="frame" x="8" y="492" width="135" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="GetParentTopics"/>
+                                        <connections>
+                                            <action selector="myGetParentTopics:" destination="S4R-Ja-viH" eventType="touchUpInside" id="kLj-E0-5ez"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xq1-Gf-Nqy">
+                                        <rect key="frame" x="195" y="97" width="117" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="GetChildTopics"/>
+                                        <connections>
+                                            <action selector="myGetChildTopics:" destination="S4R-Ja-viH" eventType="touchUpInside" id="W1y-RQ-mRh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QoR-Mx-ef0">
+                                        <rect key="frame" x="179" y="121" width="116" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="TopicsInfo"/>
+                                        <connections>
+                                            <action selector="myTopics:" destination="S4R-Ja-viH" eventType="touchUpInside" id="si2-Dc-k6D"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hH-EW-yQS">
+                                        <rect key="frame" x="195" y="144" width="134" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="TopicBestAnswer"/>
+                                        <connections>
+                                            <action selector="myTopicBestAnswer:" destination="S4R-Ja-viH" eventType="touchUpInside" id="uqF-zt-ezb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fe9-CX-MFb">
+                                        <rect key="frame" x="195" y="170" width="112" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="GetHotTopics"/>
+                                        <connections>
+                                            <action selector="myHotTopics:" destination="S4R-Ja-viH" eventType="touchUpInside" id="5SV-Ib-nJb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jfp-jB-jdG">
+                                        <rect key="frame" x="204" y="193" width="95" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="GetArticleInfo"/>
+                                        <connections>
+                                            <action selector="myGetArticleInfo:" destination="S4R-Ja-viH" eventType="touchUpInside" id="nFm-wp-x4I"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCV-3c-xzH">
+                                        <rect key="frame" x="204" y="216" width="101" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="GetComments"/>
+                                        <connections>
+                                            <action selector="myComments:" destination="S4R-Ja-viH" eventType="touchUpInside" id="KuQ-rx-b0F"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X5N-7G-nDE">
+                                        <rect key="frame" x="200" y="240" width="95" height="21"/>
+                                        <animations/>
+                                        <state key="normal" title="FavoriteItem"/>
+                                        <connections>
+                                            <action selector="myFavorite:" destination="S4R-Ja-viH" eventType="touchUpInside" id="STI-bS-Cq8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejo-IU-hBp">
+                                        <rect key="frame" x="202" y="262" width="116" height="21"/>
+                                        <animations/>
+                                        <state key="normal" title="RemoveFavorite"/>
+                                        <connections>
+                                            <action selector="myRemoveFav:" destination="S4R-Ja-viH" eventType="touchUpInside" id="nl2-al-T5U"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3c-fM-CXa">
+                                        <rect key="frame" x="202" y="286" width="125" height="18"/>
+                                        <animations/>
+                                        <state key="normal" title="SaveArtComment"/>
+                                        <connections>
+                                            <action selector="mySaveArtComment:" destination="S4R-Ja-viH" eventType="touchUpInside" id="a3O-7o-Lln"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yig-o8-YGZ">
+                                        <rect key="frame" x="202" y="303" width="147" height="20"/>
+                                        <animations/>
+                                        <state key="normal" title="RemoveArtComment"/>
+                                        <connections>
+                                            <action selector="myRemoveArtComment:" destination="S4R-Ja-viH" eventType="touchUpInside" id="fSe-do-N9d"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCz-xY-jJP">
+                                        <rect key="frame" x="204" y="320" width="101" height="23"/>
+                                        <animations/>
+                                        <state key="normal" title="RemoveArticle"/>
+                                        <connections>
+                                            <action selector="myRemoveArticle:" destination="S4R-Ja-viH" eventType="touchUpInside" id="wtU-FN-BKC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8C-QI-whH">
+                                        <rect key="frame" x="200" y="341" width="86" height="25"/>
+                                        <animations/>
+                                        <state key="normal" title="VoteArticle"/>
+                                        <connections>
+                                            <action selector="myVote:" destination="S4R-Ja-viH" eventType="touchUpInside" id="Pex-XV-Be6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osg-WL-3Kw">
+                                        <rect key="frame" x="204" y="362" width="114" height="23"/>
+                                        <animations/>
+                                        <state key="normal" title="GetQuestionInfo"/>
+                                        <connections>
+                                            <action selector="myQuestionInfo:" destination="S4R-Ja-viH" eventType="touchUpInside" id="Kfj-CG-2AW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sLf-if-bdg">
+                                        <rect key="frame" x="204" y="383" width="108" height="21"/>
+                                        <animations/>
+                                        <state key="normal" title="FocusQuestion"/>
+                                        <connections>
+                                            <action selector="myFocusQuestion:" destination="S4R-Ja-viH" eventType="touchUpInside" id="zuw-2O-nEW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zjj-aq-0hz">
+                                        <rect key="frame" x="199" y="407" width="125" height="17"/>
+                                        <animations/>
+                                        <state key="normal" title="ThanksQuestion"/>
+                                        <connections>
+                                            <action selector="myThanksQuestion:" destination="S4R-Ja-viH" eventType="touchUpInside" id="E4A-EZ-HKN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVX-y1-ehQ">
+                                        <rect key="frame" x="208" y="426" width="87" height="19"/>
+                                        <animations/>
+                                        <state key="normal" title="AnswerVote"/>
+                                        <connections>
+                                            <action selector="myAnswerVote:" destination="S4R-Ja-viH" eventType="touchUpInside" id="DSt-Da-7rV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eTC-aV-GFw">
+                                        <rect key="frame" x="208" y="444" width="87" height="24"/>
+                                        <animations/>
+                                        <state key="normal" title="SaveAnswer"/>
+                                        <connections>
+                                            <action selector="mySaveAnswer:" destination="S4R-Ja-viH" eventType="touchUpInside" id="d1e-9z-k2g"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vDe-Wg-7hG">
+                                        <rect key="frame" x="204" y="464" width="155" height="22"/>
+                                        <animations/>
+                                        <state key="normal" title="RateQuestionAnswer"/>
+                                        <connections>
+                                            <action selector="myRateQuestionAnswer:" destination="S4R-Ja-viH" eventType="touchUpInside" id="UAl-Pd-aT9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sny-jx-7LC">
+                                        <rect key="frame" x="204" y="482" width="141" height="25"/>
+                                        <animations/>
+                                        <state key="normal" title="InviteUser4Answer"/>
+                                        <connections>
+                                            <action selector="myInvite:" destination="S4R-Ja-viH" eventType="touchUpInside" id="9Ox-1S-tfB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zrU-7R-szJ">
+                                        <rect key="frame" x="202" y="500" width="129" height="27"/>
+                                        <animations/>
+                                        <state key="normal" title="RemoveQuestion"/>
+                                        <connections>
+                                            <action selector="myRemoveQuestion:" destination="S4R-Ja-viH" eventType="touchUpInside" id="bDd-3R-Hvo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6lf-Au-wsN">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="AnswerInfo"/>
+                                        <variation key="heightClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="208" y="523" width="78" height="25"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="myGetAnswerInfo:" destination="S4R-Ja-viH" eventType="touchUpInside" id="21f-bW-2j9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfx-mx-Fyg">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="UpdateAnswer"/>
+                                        <variation key="heightClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="208" y="544" width="104" height="22"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="myUpdateAnswer:" destination="S4R-Ja-viH" eventType="touchUpInside" id="2AL-l5-BOD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03C-aa-Pmr">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="RemoveAnswer"/>
+                                        <variation key="heightClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="205" y="562" width="116" height="24"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="myRemoveAnswer:" destination="S4R-Ja-viH" eventType="touchUpInside" id="75w-Og-dQi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sry-Dt-Crv">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="GetAnswerComments"/>
+                                        <variation key="heightClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="208" y="584" width="151" height="22"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="myGetAnswerComments:" destination="S4R-Ja-viH" eventType="touchUpInside" id="BaO-cB-gHH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QOz-LW-Eol">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="AnswerComments"/>
+                                        <variation key="heightClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="205" y="606" width="137" height="20"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="myAnserComments:" destination="S4R-Ja-viH" eventType="touchUpInside" id="Ovy-kW-6Sv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sbh-vo-5Le">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="RemoveAnswerComments"/>
+                                        <variation key="heightClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="209" y="624" width="185" height="24"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="myRemoveAnswerComment:" destination="S4R-Ja-viH" eventType="touchUpInside" id="gUQ-7R-g4w"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcx-PS-9Ja">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="InboxSendMessage"/>
+                                        <variation key="heightClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="17" y="536" width="141" height="30"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="mySendMessage:" destination="S4R-Ja-viH" eventType="touchUpInside" id="1NG-Me-nYv"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdZ-V8-mOs">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="GetInboxList"/>
+                                        <variation key="heightClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="19" y="562" width="92" height="26"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="myInbox:" destination="S4R-Ja-viH" eventType="touchUpInside" id="mQx-aX-cHI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awc-GM-nKg">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="MessageDialog"/>
+                                        <variation key="heightClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="18" y="584" width="114" height="30"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="myMessageDialog:" destination="S4R-Ja-viH" eventType="touchUpInside" id="hNk-tE-z9U"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydN-rB-Wg2">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="UnreadMessageNum"/>
+                                        <variation key="heightClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="19" y="609" width="156" height="30"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="myUnreadMessageNum:" destination="S4R-Ja-viH" eventType="touchUpInside" id="qAe-sZ-5dj"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mh6-ac-BoU">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <animations/>
+                                        <state key="normal" title="RemoveDialog"/>
+                                        <variation key="heightClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="20" y="638" width="109" height="30"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="myRemoveDialog:" destination="S4R-Ja-viH" eventType="touchUpInside" id="hkd-td-kgC"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="6lf-Au-wsN"/>
+                                        <exclude reference="nfx-mx-Fyg"/>
+                                        <exclude reference="03C-aa-Pmr"/>
+                                        <exclude reference="Sry-Dt-Crv"/>
+                                        <exclude reference="QOz-LW-Eol"/>
+                                        <exclude reference="sbh-vo-5Le"/>
+                                        <exclude reference="hcx-PS-9Ja"/>
+                                        <exclude reference="xdZ-V8-mOs"/>
+                                        <exclude reference="awc-GM-nKg"/>
+                                        <exclude reference="ydN-rB-Wg2"/>
+                                        <exclude reference="Mh6-ac-BoU"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular">
+                                    <mask key="subviews">
+                                        <include reference="6lf-Au-wsN"/>
+                                        <include reference="nfx-mx-Fyg"/>
+                                        <include reference="03C-aa-Pmr"/>
+                                        <include reference="Sry-Dt-Crv"/>
+                                        <include reference="QOz-LW-Eol"/>
+                                        <include reference="sbh-vo-5Le"/>
+                                        <include reference="hcx-PS-9Ja"/>
+                                        <include reference="xdZ-V8-mOs"/>
+                                        <include reference="awc-GM-nKg"/>
+                                        <include reference="ydN-rB-Wg2"/>
+                                        <include reference="Mh6-ac-BoU"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.97826086960000003" green="0.91848131079999995" blue="0.73914263440000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="s1b-V9-EN7" secondAttribute="trailing" constant="20" symbolic="YES" id="333-Jl-G0r"/>
+                            <constraint firstItem="s1b-V9-EN7" firstAttribute="leading" secondItem="ZwX-cT-FIQ" secondAttribute="leading" constant="20" symbolic="YES" id="CIC-qa-9gW"/>
+                            <constraint firstItem="cF2-Le-7mQ" firstAttribute="leading" secondItem="ZwX-cT-FIQ" secondAttribute="leading" constant="20" symbolic="YES" id="PnF-O8-Bso"/>
+                            <constraint firstAttribute="bottom" secondItem="s1b-V9-EN7" secondAttribute="bottom" constant="20" symbolic="YES" id="Xg4-Xc-7kb"/>
+                            <constraint firstAttribute="trailing" secondItem="cF2-Le-7mQ" secondAttribute="trailing" constant="20" symbolic="YES" id="cCk-mG-gz5"/>
+                            <constraint firstItem="s1b-V9-EN7" firstAttribute="top" secondItem="cF2-Le-7mQ" secondAttribute="bottom" constant="8" symbolic="YES" id="kQJ-gh-hu4"/>
+                            <constraint firstItem="cF2-Le-7mQ" firstAttribute="top" secondItem="ZwX-cT-FIQ" secondAttribute="top" constant="20" symbolic="YES" id="zem-Jm-uYh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dataLabel" destination="cF2-Le-7mQ" id="3EH-BK-JV6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GmD-Rr-ZGN" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="597" y="-243"/>
+        </scene>
+    </scenes>
+</document>
